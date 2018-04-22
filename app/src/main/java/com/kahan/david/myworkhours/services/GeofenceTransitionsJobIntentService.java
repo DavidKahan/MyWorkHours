@@ -24,8 +24,8 @@ public class GeofenceTransitionsJobIntentService extends JobIntentService {
     private static final int JOB_ID = 876;
 
     private static final String TAG = "GeofenceTranJobIS";
-    private boolean enteredGeofence;
-    private Date enteredTime;
+    private static boolean enteredGeofence;
+    private static Date enteredTime;
 
     /**
      * Convenience method for enqueuing work in to this service.

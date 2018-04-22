@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
 
     private GeofencingRequest getGeofencingRequest() {
         GeofencingRequest.Builder builder = new GeofencingRequest.Builder();
-        builder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
+        builder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER | GeofencingRequest.INITIAL_TRIGGER_EXIT);
         builder.addGeofences(mGeofenceList);
         return builder.build();
     }
